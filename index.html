@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+    <title>PM | Python Developer Portfolio</title>
+    <meta name="description"
+        content="Professional web developer portfolio showcasing projects, skills, experience and contact details.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: Inter, system-ui, Arial, sans-serif;
+        }
+
+        /* No scrollbar */
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        * {
+            scrollbar-width: none;
+        }
+
+        /* Typing cursor */
+        .typing-text {
+            border-right: 2px solid #3b82f6;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        /* Skill bar animation */
+        .skill-bar .bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 w-full bg-neutral-900 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="text-white text-xl font-bold">PM</div>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="#hero" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-white">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+
+            <button class="hamburger md:hidden text-white">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-neutral-900 px-6 pb-4 space-y-2">
+            <a href="#hero" class="block text-gray-300">Home</a>
+            <a href="#about" class="block text-gray-300">About</a>
+            <a href="#skills" class="block text-gray-300">Skills</a>
+            <a href="#projects" class="block text-gray-300">Projects</a>
+            <a href="#contact" class="block text-gray-300">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero-section" id="hero" data-aos="fade-down">
+            <div class="home">
+
+                <!-- Left Content -->
+                <div class="hero-text" data-aos="fade-right">
+                    <h1>Hi, I'm <span>Prashant</span></h1>
+                    <h3>Python Developer</h3>
+
+                    <p>
+                        Passionate about creating beautiful and functional web applications
+                        with modern technologies.
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#" class="btn primary">Hire Me</a>
+                        <a href="#" class="btn2 out">View Work</a>
+                    </div>
+
+                    <div class="socials">
+                        <span> <a href=""> <img src="img/github.png" alt=""></a></span>
+                        <span><a href=""> <img src="img/icons8-linkedin-500.png" alt=""></a></span>
+                        <span><a href=""> <img src="img/icons8-telegram-500.png" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Right Avatar -->
+                <div class="hero-avatar" data-aos="fade-left">
+                    <div class="circle-outer">
+                        <div class="circle-inner">
+                            <span class="emoji">👨‍💻</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about-section" id="about" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Content -->
+                <div class="about-content">
+
+                    <!-- Left Card -->
+                    <div class="about-card">
+                        <div class="info-item">
+                            <span class="dot"></span>
+                            <div>
+                                <h4>Education</h4>
+                                <p>MCA in Computer application</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="dot"></span>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>2+ Years in Web Development</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="dot"></span>
+                            <div>
+                                <h4>Pune</h4>
+                                <p>Maharashtra, INDIA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="about-text">
+                        <h3>Who am I?</h3>
+
+                        <p>
+                            I'm a passionate Full Stack Developer with expertise in building modern
+                            web applications. With over 5 years of experience in the industry,
+                            I've developed a deep understanding of both front-end and back-end technologies.
+                        </p>
+
+                        <p>
+                            My approach to development focuses on creating clean, efficient, and
+                            maintainable code while ensuring exceptional user experiences. I enjoy
+                            tackling complex problems and continuously learning new technologies.
+                        </p>
+
+                        <div class="skills">
+                            <div><span class="check"></span> Web Development</div>
+                            <div><span class="check"></span> UI/UX Design</div>
+                            <div><span class="check"></span> Mobile Development</div>
+                            <div><span class="check"></span> Database Design</div>
+                        </div>
+
+                        <a href="#" class="btn">Let's Talk</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="skills-section" id="skills" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Skills Cards -->
+                <div class="skills-grid">
+
+                    <!-- Frontend -->
+                    <div class="skill-card" data-aos="fade-right">
+                        <span class="icon"></span>
+                        <h3>Frontend Development</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <span class="icon"></span>
+                        <h3>Backend Development</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-card" data-aos="fade-left">
+                        <span class="icon"></span>
+                        <h3>Database & Tools</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================= PROJECTS ================= -->
+        <section class="projects-section" id="projects" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>My Projects</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/e-commerce.png" alt="" class="image-icon">
+
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>
+                                A full-stack e-commerce solution with React and Node.js
+                            </p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- <span class="image-icon"></span> -->
+                            <img src="img/task-manager.png" alt="" class="image-icon">
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>
+                                A mobile-first task management application
+                            </p>
+                            <div class="tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- <span class="image-icon"></span> -->
+                            <img src="img/analysis.png" alt="" class="image-icon">
+                        </div>
+                        <div class="project-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p>
+                                Real-time analytics dashboard with data visualization
+                            </p>
+                            <div class="tags">
+                                <span>Angular</span>
+                                <span>D3.js</span>
+                                <span>Express</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <section class="resume-section" id="resume" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Header -->
+                <div class="section-header"  >
+                    <h2>Resume</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Resume Grid -->
+                <div class="resume-grid" data-aos="fade-up">
+
+                    <!-- Education -->
+                    <div class="resume-column">
+                        <h3 class="column-title">
+                            <span class="square"></span> Education
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <span class="dot"></span>
+                                <div class="card">
+                                    <span class="year">2015 - 2019</span>
+                                    <h4>Bachelor in Computer Science</h4>
+                                    <p class="place">Stanford University</p>
+                                    <p class="desc">
+                                        Specialized in Software Engineering and Web Technologies.
+                                        Graduated with honors.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up">
+                                <span class="dot"></span>
+                                <div class="card">
+                                    <span class="year">2013 - 2015</span>
+                                    <h4>Associate Degree in IT</h4>
+                                    <p class="place">Community College of Technology</p>
+                                    <p class="desc">
+                                        Foundation courses in programming and computer systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="resume-column">
+                        <h3 class="column-title">
+                            <span class="square"></span> Experience
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <span class="dot"></span>
+                                <div class="card">
+                                    <span class="year">2020 - Present</span>
+                                    <h4>Senior Full Stack Developer</h4>
+                                    <p class="place">Tech Solutions Inc.</p>
+                                    <ul>
+                                        <li>Lead development of enterprise web applications</li>
+                                        <li>Manage team of 5 developers</li>
+                                        <li>Implement CI/CD pipelines</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up">
+                                <span class="dot"></span>
+                                <div class="card">
+                                    <span class="year">2019 - 2020</span>
+                                    <h4>Frontend Developer</h4>
+                                    <p class="place">Digital Creators Co.</p>
+                                    <ul>
+                                        <li>Developed responsive web applications</li>
+                                        <li>Optimized application performance</li>
+                                        <li>Collaborated with UX team</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-aos="fade-up">
+                                <span class="dot"></span>
+                                <div class="card">
+                                    <span class="year">2018 - 2019</span>
+                                    <h4>Web Development Intern</h4>
+                                    <p class="place">StartUp Hub</p>
+                                    <ul>
+                                        <li>Assisted in website maintenance</li>
+                                        <li>Created landing pages</li>
+                                        <li>Learned modern web technologies</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Download Button -->
+                <div class="resume-btn" data-aos="fade-up">
+                    <a href="#" class="btn">⬇ Download Resume</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========================================== -->
+
+        <section class="testimonials-section" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>Client Testimonials</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials-grid">
+
+                    <!-- Card 1 -->
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="avatar">DM</div>
+                        <p class="quote">
+                            "Working with Prashant was an excellent experience. His technical expertise
+                            and attention to detail made our project a huge success."
+                        </p>
+                        <h4>Dm </h4>
+                        <span class="role">CEO,tech.in </span>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="avatar">MS</div>
+                        <p class="quote">
+                            "The level of professionalism and technical skill demonstrated was
+                            outstanding. Would definitely recommend!"
+                        </p>
+                        <h4>Mike Smith</h4>
+                        <span class="role">CTO, Digital Solutions</span>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="avatar">AL</div>
+                        <p class="quote">
+                            "An exceptional developer who delivers high-quality work consistently.
+                            Our project was completed ahead of schedule."
+                        </p>
+                        <h4>Amy Lee</h4>
+                        <span class="role">Product Manager, StartUp Inc</span>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- ============================================ -->
+
+        <section class="contact-section" id="contact" data-aos="zoom-in">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <span class="underline"></span>
+                </div>
+
+                <!-- Contact Grid -->
+                <div class="contact-grid">
+
+                    <!-- Left Info -->
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Contact Information</h3>
+
+                        <div class="info-item">
+                            <span class="icon"></span>
+                            <div>
+                                <small>Email</small>
+                                <p>Prashant.tech@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="icon"></span>
+                            <div>
+                                <small>Phone</small>
+                                <p> +91 9075$$7605</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="icon"></span>
+                            <div>
+                                <small>Location</small>
+                                <p>PUNE, Maharashtra, INDIA</p>
+                            </div>
+                        </div>
+
+                        <h4>Connect with me</h4>
+                        <div class="socials" data-aos="zoom-in">
+                            <span> <a href=""> <img src="img/github.png" alt=""></a></span>
+                            <span><a href=""> <img src="img/icons8-linkedin-500.png" alt=""></a></span>
+                            <span><a href=""> <img src="img/icons8-telegram-500.png" alt=""></a></span>
+                        </div>
+                    </div>
+
+                    <!-- Right Form -->
+                    <div class="contact-form" data-aos="fade-left">
+                        <form>
+                            <label>Name</label>
+                            <input type="text">
+
+                            <label>Email</label>
+                            <input type="email">
+
+                            <label>Subject</label>
+                            <input type="text">
+
+                            <label>Message</label>
+                            <textarea rows="5"></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" data-aos="zoom-out">
+        <div class="container">
+
+            <!-- Top Footer -->
+            <div class="footer-grid">
+
+                <!-- About -->
+                <div class="footer-col">
+                    <h3>John Doe</h3>
+                    <p>
+                        Full Stack Developer specializing in modern web technologies and
+                        creating exceptional digital experiences.
+                    </p>
+
+                    <div class="socials" data-aos="flip-left">
+                        <span> <a href=""> <img src="img/github.png" alt=""></a></span>
+                        <span><a href=""> <img src="img/icons8-linkedin-500.png" alt=""></a></span>
+                        <span><a href=""> <img src="img/icons8-telegram-500.png" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+
+                    <div class="contact-item">
+                        <span class="icon"></span>
+                        <p>Prashant.tech@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon"></span>
+                        <p>+91 9075$$7605</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon"></span>
+                        <p>PUNE, Maharashtra, INDIA</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom"  >
+                © 2026 Prashant Meshram. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,   /* animation speed */
+            once: true,       /* ek hi baar animate */
+            offset: 120       /* kitna scroll pe start */
+        });
+    </script>
+
+    <script>
+        /* Mobile menu */
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        /* Typing text */
+        const titles = ["Full Stack Developer", "UI/UX Designer", "Problem Solver"];
+        let i = 0;
+        const typingText = document.getElementById('typingText');
+        function updateTitle() {
+            typingText.textContent = titles[i];
+            i = (i + 1) % titles.length;
+        }
+        updateTitle();
+        setInterval(updateTitle, 3000);
+
+        /* Intersection Observer */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target.dataset.animation) {
+                    entry.target.classList.add('animate__animated', entry.target.dataset.animation);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('[data-animation]').forEach(el => observer.observe(el));
+
+        /* Footer year */
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        /* Scroll to top */
+        const scrollBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('hidden', window.scrollY < 300);
+        });
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
